@@ -15,7 +15,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><router-link :to="{name:'Customers'}">主页</router-link> </li>
             <li><router-link :to="{name:'About'}">关于</router-link> </li>
-            
+          
           </ul>
         </div><!--/.nav-collapse -->
       </div>
