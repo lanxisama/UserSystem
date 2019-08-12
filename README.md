@@ -3,10 +3,7 @@
 > A Vue.js project
 
 
-#Run jsonserver first
-cd jsonserver
 
-cnpm run test
 
 ## Build Setup
 
@@ -26,5 +23,17 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+#Run jsonserver first
+cd jsonserver
 
+cnpm run test
+
+
+## 搜索功能实现
+  filterUser(){
+      //实现搜索
+        return this.customers.filter((user)=>{
+            return user.name.match(this.search)
+        })
+    }
 

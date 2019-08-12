@@ -59,7 +59,8 @@ export default {
             var url="http://localhost:3000/users"
             this.$http.post(url,this.customer).then(data=>{
             alert("信息添加成功");
-            this.$router.push("/")
+            this.$router.push({path:"/",query:{message:"我传过来一个值"}})
+            //之后用this.$route.query.alert就能取得传过来的数值
       })
        
       }
